@@ -1,0 +1,1058 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#090b12"><meta name="description" content="Alkha Mariam Mathew — BCA student, cybersecurity enthusiast, cloud and web developer."><title>Alkha Mariam Mathew | Portfolio</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:wght@700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><style>
+:root{--bg:#090b12;--ink:#f7f1ed;--muted:#b7b0b2;--rose:#f4a8bb;--rose2:#c87991;--leaf:#9bb99a;--line:rgba(255,255,255,.12);--panel:rgba(22,23,32,.72);--serif:'Playfair Display',Georgia,serif;--mono:'DM Mono',monospace;--sans:Inter,system-ui,sans-serif;--nav-h:78px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);overflow-x:hidden;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit}#app{position:relative;min-height:100vh;background:transparent;cursor:default;-webkit-user-select:text;user-select:text}#cv{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}#inp{position:fixed;left:0;top:0;width:1px;height:1px;opacity:0;pointer-events:none}
+.progress{position:fixed;z-index:30;top:0;left:0;width:100%;height:3px;background:rgba(255,255,255,.06)}.progress-fill{height:100%;width:0;background:linear-gradient(90deg,var(--rose),var(--leaf));box-shadow:0 0 14px #f4a8bb88;transition:width .08s linear}
+.mark{position:fixed;z-index:20;top:18px;left:clamp(18px,5vw,76px);color:var(--ink);pointer-events:none}.mark b{font:700 20px/1 var(--serif);letter-spacing:.01em}.mark span{display:block;margin-top:7px;font:10px var(--mono);letter-spacing:.13em;text-transform:uppercase;color:#d5c7c8}.modes{position:fixed;z-index:22;top:17px;right:clamp(16px,4vw,64px);display:flex;gap:3px;padding:5px;border:1px solid rgba(255,255,255,.16);border-radius:40px;background:rgba(12,13,20,.72);backdrop-filter:blur(18px);max-width:calc(100vw - 300px)}.modes button{border:0;border-radius:30px;padding:10px 14px;font:11px var(--mono);letter-spacing:.03em;color:#d0c7ca;background:transparent;cursor:pointer;white-space:nowrap;transition:.25s}.modes button:hover,.modes button.on{background:var(--rose);color:#25151b}.menu-toggle{display:none}
+.rail{position:fixed;z-index:18;right:20px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:8px;padding:9px 7px;border:1px solid rgba(255,255,255,.14);border-radius:30px;background:rgba(12,13,20,.55);backdrop-filter:blur(12px)}.sw{width:22px;height:22px;padding:0;border-radius:50%;cursor:pointer;border:1.5px solid transparent;display:grid;place-items:center}.sw i{width:12px;height:12px;border-radius:50%;display:block}.sw.on{border-color:#fff;transform:scale(1.1)}
+.site-section{position:relative;z-index:2;min-height:100vh;padding:clamp(105px,12vh,145px) clamp(24px,8vw,130px) 100px;overflow:hidden;isolation:isolate;scroll-margin-top:0}.site-section:not(#home){background:linear-gradient(135deg,rgba(10,12,19,.97),rgba(18,17,26,.96));border-top:1px solid rgba(255,255,255,.055)}.site-section:not(#home)::before{content:"";position:absolute;z-index:-1;inset:0;opacity:.7;background:radial-gradient(ellipse at 12% 20%,rgba(184,112,137,.13),transparent 34%),radial-gradient(ellipse at 88% 78%,rgba(112,151,119,.12),transparent 32%)}.site-section:not(#home)::after{content:"✿";position:absolute;z-index:-1;right:5%;top:12%;font-size:clamp(150px,25vw,380px);color:rgba(239,174,190,.035);transform:rotate(-18deg);pointer-events:none}.container{width:min(1160px,100%);margin:0 auto}.eyebrow{font:11px var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--leaf);display:flex;align-items:center;gap:12px}.eyebrow:before{content:"";width:28px;height:1px;background:var(--rose)}.section-title{font:700 clamp(38px,5.5vw,68px)/1.05 var(--serif);letter-spacing:-.035em;margin:18px 0 20px}.section-intro{color:var(--muted);line-height:1.85;max-width:650px;font-size:15px}.accent{color:var(--rose)}
+#home{min-height:100svh;padding-top:0;padding-bottom:0;display:flex;align-items:center;background:linear-gradient(90deg,rgba(9,11,18,.78),rgba(9,11,18,.25) 72%,rgba(9,11,18,.4));z-index:1}#home .hero-wrap{width:min(1160px,100%);margin:0 auto;padding:145px 0 100px;position:relative;pointer-events:none}#home .hero-copy{max-width:770px;pointer-events:auto}.hero-kicker{font:11px var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--leaf);margin-bottom:24px}.hero-title{font:700 clamp(48px,7.2vw,92px)/.99 var(--serif);letter-spacing:-.045em;margin:0 0 22px;max-width:850px}.hero-title span{color:var(--rose);font-style:italic}.hero-subtitle{font:12px var(--mono);letter-spacing:.09em;text-transform:uppercase;color:#e0cbd1;line-height:1.8}.hero-description{font-size:16px;line-height:1.85;color:#d0c9cb;max-width:590px;margin:24px 0 30px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 21px;border-radius:40px;border:1px solid rgba(255,255,255,.22);font:11px var(--mono);letter-spacing:.04em;transition:transform .25s,background .25s,border .25s;cursor:pointer}.btn:hover{transform:translateY(-3px)}.btn-primary{background:var(--rose);color:#27151d;border-color:var(--rose)}.btn-ghost{background:rgba(255,255,255,.045);backdrop-filter:blur(12px)}.social-links{display:flex;gap:18px;margin-top:30px;color:#e7dfe1;font:11px var(--mono)}.social-links a{border-bottom:1px solid #ffffff55;padding-bottom:4px}.scroll-cue{position:absolute;bottom:34px;left:50%;transform:translateX(-50%);font:10px var(--mono);letter-spacing:.18em;text-transform:uppercase;color:#d8cdd0;display:flex;align-items:center;gap:12px}.scroll-cue:after{content:"";height:34px;width:1px;background:linear-gradient(var(--rose),transparent);position:absolute;left:50%;top:22px}
+.about-grid{display:grid;grid-template-columns:minmax(260px,.78fr) 1.22fr;gap:clamp(36px,7vw,100px);align-items:center}.portrait-wrap{position:relative;width:100%;max-width:390px;margin:0 auto}.portrait-frame{position:relative;width:100%;padding:10px;border:1px solid rgba(244,168,187,.42);border-radius:18px;background:linear-gradient(145deg,rgba(244,168,187,.15),rgba(155,185,154,.08));box-shadow:0 18px 48px #0006;overflow:hidden}.portrait-frame:before{content:"";position:absolute;inset:5px;border:1px solid rgba(155,185,154,.20);border-radius:12px;pointer-events:none;z-index:1}.portrait-frame img{display:block;width:100%;height:auto;max-height:220px;aspect-ratio:2048/1042;object-fit:contain;object-position:center;border-radius:10px;background:rgba(8,12,18,.25)}.portrait-caption{font:10px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:#d7c5cb;text-align:center;margin-top:18px}.about-copy p{font-size:14px;line-height:1.9;color:var(--muted)}.info-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:28px}.info-card,.skill-card,.project-card,.contact-card,.timeline-card{border:1px solid var(--line);background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.018));border-radius:18px;padding:20px;backdrop-filter:blur(12px);transition:transform .3s,border-color .3s,background .3s}.info-card:hover,.skill-card:hover,.project-card:hover,.contact-card:hover{transform:translateY(-5px);border-color:#e8a9bb88;background:rgba(244,168,187,.075)}.card-label{font:10px var(--mono);text-transform:uppercase;letter-spacing:.14em;color:var(--leaf)}.info-card h3{font:19px var(--serif);margin:9px 0 5px}.info-card p{font-size:12px;line-height:1.7;margin:0;color:var(--muted)}
+.skills-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:38px}.skill-card{min-height:168px;position:relative;overflow:hidden}.skill-icon{font-size:23px}.skill-card h3{font:19px var(--serif);margin:13px 0 9px}.skill-card p{font-size:12px;line-height:1.8;color:var(--muted);margin:0;position:relative;z-index:1}
+.timeline{position:relative;margin:42px 0 0;padding-left:34px}.timeline:before{content:"";position:absolute;left:8px;top:8px;bottom:10px;width:1px;background:linear-gradient(var(--rose),var(--leaf),transparent)}.timeline-item{position:relative;margin-bottom:24px}.timeline-item:before{content:"✿";position:absolute;left:-34px;top:18px;color:var(--rose);font-size:17px;text-shadow:0 0 18px #f4a8bb88}.timeline-card{padding:28px}.timeline-card h3{font:26px var(--serif);margin:0 0 5px}.timeline-meta{font:11px var(--mono);color:var(--leaf);letter-spacing:.1em}.timeline-card ul{padding-left:18px;color:var(--muted);font-size:13px;line-height:1.95;margin:18px 0 0}.timeline-card li{padding-left:4px;margin:3px 0}
+.projects-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:38px}.project-card{padding:28px;min-height:265px;position:relative;overflow:hidden}.project-number{font:11px var(--mono);color:var(--rose);letter-spacing:.14em}.project-symbol{position:absolute;right:24px;top:23px;font-size:30px;opacity:.75}.project-card h3{font:25px/1.2 var(--serif);margin:23px 0 12px;max-width:85%}.project-card p{color:var(--muted);font-size:13px;line-height:1.8}.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:20px}.tags span{font:10px var(--mono);color:#e5cbd2;border:1px solid #f4a8bb44;border-radius:20px;padding:6px 9px}.project-link{display:inline-block;margin-top:18px;font:10px var(--mono);color:var(--leaf);border-bottom:1px solid #9bb99a66;padding-bottom:4px}
+.contact-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:start;margin-top:34px}.contact-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.contact-card{padding:20px;min-width:0}.contact-card small{display:block;color:var(--leaf);font:10px var(--mono);letter-spacing:.12em;text-transform:uppercase}.contact-card a,.contact-card span{display:block;margin-top:10px;font-size:13px;overflow-wrap:anywhere}.contact-note{padding:30px;border:1px solid #f4a8bb40;border-radius:24px;background:linear-gradient(140deg,#f4a8bb18,#9bb99a0d)}.contact-note h3{font:30px var(--serif);margin:0 0 14px}.contact-note p{font-size:13px;line-height:1.8;color:var(--muted)}.contact-note .btn{margin-top:12px}
+.footer{position:relative;z-index:2;padding:26px 24px;text-align:center;background:#080910;border-top:1px solid var(--line);color:#8f898e;font:10px var(--mono);letter-spacing:.08em}.back-top{position:fixed;z-index:15;right:24px;bottom:24px;width:44px;height:44px;border:1px solid #f4a8bb66;border-radius:50%;background:rgba(17,17,25,.8);color:var(--rose);cursor:pointer;backdrop-filter:blur(12px);font-size:18px}.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}.reveal.revealed{opacity:1;transform:none}.sheet{display:none!important}.foot{position:fixed;z-index:4;left:24px;bottom:18px;color:#eee8e9;font:9px var(--mono);opacity:.4;pointer-events:none}.hints{display:flex;gap:14px}.hints kbd{font:inherit}.coarse{display:none}
+@media(max-width:1000px){.modes{right:20px}.modes button{padding:9px 10px}.skills-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.site-section{padding-left:6vw;padding-right:6vw}.mark b{font-size:17px}.mark span{font-size:9px}}
+@media(max-width:760px){:root{--nav-h:64px}.mark{top:19px;left:18px}.mark b{font-size:17px}.mark span{display:none}.menu-toggle{display:grid;place-items:center;position:fixed;z-index:25;right:16px;top:14px;width:42px;height:42px;border:1px solid #ffffff30;border-radius:50%;background:#10111bd9;color:#fff;font-size:19px}.modes{display:none;top:66px;left:14px;right:14px;max-width:none;flex-direction:column;border-radius:18px;padding:8px;background:rgba(12,13,20,.95)}.modes button{text-align:left;padding:12px 14px}.menu-open .modes{display:flex}.rail{right:10px;top:auto;bottom:18px;transform:none;flex-direction:row;padding:6px;gap:5px}.sw{width:19px;height:19px}.site-section{padding:105px 22px 88px;min-height:auto}.site-section:not(#home){min-height:auto}#home{min-height:100svh;padding:0 22px}#home .hero-wrap{padding:125px 0 110px}.hero-title{font-size:clamp(47px,12vw,72px)}.hero-description{font-size:14px}.hero-subtitle{font-size:10px}.scroll-cue{bottom:26px}.about-grid{grid-template-columns:1fr;gap:40px}.portrait-wrap{max-width:min(360px,88vw)}.portrait-frame img{max-height:190px}.about-copy{max-width:650px}.skills-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.projects-grid{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr;gap:22px}.contact-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.section-title{font-size:46px}.foot{display:none}.back-top{right:14px;bottom:70px;width:40px;height:40px}}
+@media(max-width:430px){.skills-grid{grid-template-columns:1fr 1fr;gap:9px}.skill-card{padding:15px;min-height:175px}.skill-card h3{font-size:17px}.skill-card p{font-size:11px}.contact-cards,.info-grid{grid-template-columns:1fr}.hero-actions .btn{width:100%}.project-card{padding:23px}.section-title{font-size:40px}.rail{bottom:14px}.back-top{bottom:62px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+/* ---------- Subtle botanical atmosphere enhancement ---------- */
+/* The original canvas garden, flower growth, butterflies and palette controls remain untouched. */
+#home{
+  background:
+    radial-gradient(ellipse at 76% 24%, rgba(244,168,187,.12), transparent 34%),
+    radial-gradient(ellipse at 18% 78%, rgba(155,185,154,.13), transparent 36%),
+    radial-gradient(ellipse at 58% 92%, rgba(198,121,145,.08), transparent 30%),
+    linear-gradient(105deg,rgba(9,11,18,.58),rgba(9,11,18,.18) 58%,rgba(9,11,18,.36));
+  background-size:150% 150%;
+  animation:gardenAtmosphere 26s ease-in-out infinite alternate;
+}
+#home::before{
+  content:"";position:absolute;z-index:-1;inset:0;pointer-events:none;opacity:.62;
+  background:
+    radial-gradient(circle at 78% 28%, rgba(255,218,229,.16) 0 1px, transparent 2px),
+    radial-gradient(circle at 84% 66%, rgba(198,225,190,.18) 0 1px, transparent 2px),
+    radial-gradient(circle at 63% 82%, rgba(255,218,229,.14) 0 1.5px, transparent 2.5px),
+    radial-gradient(ellipse at 78% 45%, transparent 0 22%, rgba(244,168,187,.055) 22.15% 22.3%, transparent 22.5% 31%, rgba(155,185,154,.045) 31.15% 31.3%, transparent 31.5%);
+  background-size:190px 190px,230px 230px,270px 270px,100% 100%;
+  animation:pollenDrift 38s linear infinite;
+}
+#home::after{
+  content:"";position:absolute;z-index:-1;width:min(46vw,620px);aspect-ratio:1;right:-10%;top:8%;
+  border:1px solid rgba(244,168,187,.10);border-radius:50%;
+  box-shadow:0 0 0 26px rgba(244,168,187,.018),0 0 0 58px rgba(155,185,154,.018),inset 0 0 90px rgba(244,168,187,.035);
+  pointer-events:none;animation:haloBreathe 12s ease-in-out infinite alternate;
+}
+.site-section:not(#home){
+  background:
+    radial-gradient(ellipse at 8% 18%,rgba(244,168,187,.075),transparent 36%),
+    radial-gradient(ellipse at 92% 76%,rgba(155,185,154,.075),transparent 34%),
+    linear-gradient(135deg,rgba(10,12,19,.955),rgba(18,17,26,.94));
+}
+.site-section:not(#home)::before{
+  opacity:.82;
+  background:
+    radial-gradient(ellipse at 12% 20%,rgba(184,112,137,.15),transparent 34%),
+    radial-gradient(ellipse at 88% 78%,rgba(112,151,119,.14),transparent 32%),
+    radial-gradient(circle at 72% 18%,rgba(255,226,235,.10) 0 1px,transparent 2px),
+    radial-gradient(circle at 24% 84%,rgba(190,220,185,.09) 0 1px,transparent 2px),
+    repeating-linear-gradient(125deg,transparent 0 86px,rgba(255,255,255,.012) 87px,transparent 88px 170px);
+  background-size:auto,auto,180px 180px,220px 220px,auto;
+  animation:sectionGlow 28s ease-in-out infinite alternate;
+}
+.site-section:not(#home)::after{
+  color:rgba(239,174,190,.045);text-shadow:0 0 55px rgba(244,168,187,.06);
+  animation:watermarkFloat 18s ease-in-out infinite alternate;
+}
+.info-card,.skill-card,.project-card,.contact-card,.timeline-card{
+  box-shadow:0 14px 42px rgba(0,0,0,.12),inset 0 1px 0 rgba(255,255,255,.035);
+}
+@keyframes gardenAtmosphere{0%{background-position:0% 30%}100%{background-position:100% 70%}}
+@keyframes pollenDrift{from{transform:translate3d(0,0,0) rotate(0deg)}to{transform:translate3d(-18px,12px,0) rotate(3deg)}}
+@keyframes haloBreathe{from{transform:translate3d(0,0,0) scale(.96);opacity:.55}to{transform:translate3d(-14px,12px,0) scale(1.035);opacity:1}}
+@keyframes sectionGlow{from{background-position:0 0,0 0,0 0,0 0,0 0}to{background-position:18px -12px,-14px 16px,24px 18px,-20px -15px,0 0}}
+@keyframes watermarkFloat{from{transform:translateY(-5px) rotate(-18deg)}to{transform:translateY(12px) rotate(-12deg)}}
+@media(max-width:760px){
+  #home{background:radial-gradient(ellipse at 82% 18%,rgba(244,168,187,.10),transparent 38%),radial-gradient(ellipse at 14% 82%,rgba(155,185,154,.11),transparent 40%),linear-gradient(105deg,rgba(9,11,18,.62),rgba(9,11,18,.34))}
+  #home::after{width:78vw;right:-32%;top:18%;opacity:.55}
+  .site-section:not(#home)::after{right:-14%;top:18%;font-size:clamp(150px,48vw,260px)}
+}
+@media(prefers-reduced-motion:reduce){#home,#home::before,#home::after,.site-section:not(#home)::before,.site-section:not(#home)::after{animation:none!important}}
+
+
+/* CTF participation: same card styling, centred in its own bottom row. */
+.info-grid .ctf-card{
+  grid-column:1 / -1;
+  justify-self:center;
+  width:calc((100% - 12px) / 2);
+}
+@media(max-width:760px){
+  .info-grid .ctf-card{grid-column:1;width:100%}
+}
+
+
+/* ---------- Gentle mouse interaction layer ---------- */
+@media (hover:hover) and (pointer:fine) {
+  body { cursor: none; }
+  a, button, input, textarea, select { cursor: none; }
+  .mouse-orb, .mouse-dot {
+    position:fixed; left:0; top:0; z-index:99999; pointer-events:none;
+    border-radius:50%; transform:translate(-50%,-50%);
+    opacity:0; transition:opacity .2s ease, width .2s ease, height .2s ease, border-color .2s ease;
+  }
+  .mouse-orb {
+    width:34px; height:34px; border:1px solid rgba(245,184,204,.8);
+    box-shadow:0 0 18px rgba(231,151,180,.18), inset 0 0 12px rgba(231,151,180,.08);
+    backdrop-filter:blur(2px);
+  }
+  .mouse-dot {
+    width:5px; height:5px; background:#f3c4d2;
+    box-shadow:0 0 12px rgba(243,196,210,.9);
+  }
+  body.mouse-ready .mouse-orb, body.mouse-ready .mouse-dot { opacity:1; }
+  body.mouse-hover .mouse-orb {
+    width:48px; height:48px; border-color:rgba(185,218,178,.95);
+    box-shadow:0 0 24px rgba(155,185,154,.25), inset 0 0 14px rgba(155,185,154,.10);
+  }
+  .mouse-petal {
+    position:fixed; z-index:99997; width:6px; height:10px; border-radius:90% 10% 90% 10%;
+    pointer-events:none; opacity:.72; background:rgba(235,174,194,.8);
+    box-shadow:0 0 10px rgba(235,174,194,.28);
+    animation:mousePetalFade .72s ease-out forwards;
+  }
+  @keyframes mousePetalFade {
+    0%{opacity:.8;transform:translate(-50%,-50%) rotate(0deg) scale(1)}
+    100%{opacity:0;transform:translate(calc(-50% + var(--dx)),calc(-50% + var(--dy))) rotate(95deg) scale(.25)}
+  }
+  .project-card, .skill-card, .info-card, .contact-card, .timeline-card {
+    transition:transform .24s ease, box-shadow .24s ease, border-color .24s ease;
+    transform-style:preserve-3d;
+  }
+  .project-card:hover, .skill-card:hover, .info-card:hover, .contact-card:hover, .timeline-card:hover {
+    border-color:rgba(235,174,194,.38);
+    box-shadow:0 18px 48px rgba(0,0,0,.24),0 0 22px rgba(235,174,194,.07);
+  }
+}
+@media (prefers-reduced-motion:reduce) {
+  .mouse-petal { animation:none; display:none; }
+}
+
+/* ---------- Opening screen: animated floral name + "Explore My Portfolio" ---------- */
+body.intro-lock{overflow:hidden;height:100%;overscroll-behavior:none}
+body.intro-lock .progress,body.intro-lock .mark,body.intro-lock .menu-toggle,body.intro-lock .modes,
+body.intro-lock .sheet,body.intro-lock .site-section,body.intro-lock .footer,body.intro-lock .back-top,
+body.intro-lock .foot{visibility:hidden;pointer-events:none}
+/* the colour-palette picker stays usable on the opening screen */
+body.intro-lock .rail{visibility:visible;pointer-events:auto;z-index:10003}
+body.intro-lock #cv{opacity:1;filter:none}
+/* Once inside the site, the garden softens into a backdrop so the hero text stays readable */
+#cv{transition:opacity 1s ease}
+body:not(.intro-lock) #cv{opacity:.3}
+
+.intro-screen{position:fixed;inset:0;z-index:10000;overflow:hidden;background:transparent;pointer-events:none;
+  opacity:1;visibility:visible;transition:opacity .85s ease,visibility .85s ease}
+.intro-screen.is-leaving{opacity:0;visibility:hidden}
+.intro-content{position:absolute;inset:0;pointer-events:none}
+.intro-glow{position:absolute;width:220px;height:220px;border-radius:50%;filter:blur(70px);opacity:.16;pointer-events:none}
+.intro-glow-one{background:#d989a4;left:8%;bottom:8%}
+.intro-glow-two{background:#8eaf91;right:8%;top:8%}
+
+/* The button is placed by JS (--intro-btn-top) so it always sits just under the name on the canvas */
+.intro-explore{position:absolute;left:50%;top:var(--intro-btn-top,62%);transform:translateX(-50%);
+  display:inline-flex;align-items:center;justify-content:center;gap:16px;min-width:230px;min-height:52px;padding:15px 26px;
+  border:1px solid rgba(244,168,187,.75);border-radius:999px;color:#fff4f2;
+  background:rgba(244,168,187,.16);backdrop-filter:blur(6px);
+  font:500 12px var(--mono);letter-spacing:.16em;text-transform:uppercase;white-space:nowrap;cursor:pointer;
+  box-shadow:0 8px 30px rgba(0,0,0,.28),inset 0 0 22px rgba(244,168,187,.08);
+  pointer-events:auto;opacity:0;animation:introButtonRise 1s 1.9s ease forwards;
+  transition:background .25s ease,border-color .25s ease,box-shadow .25s ease}
+.intro-explore:hover{transform:translateX(-50%) translateY(-3px);background:rgba(244,168,187,.28);border-color:#f4a8bb;box-shadow:0 12px 38px rgba(244,168,187,.2)}
+.intro-explore:focus-visible{outline:2px solid #fff;outline-offset:5px}
+.intro-arrow{font-size:18px;transition:transform .25s ease}
+.intro-explore:hover .intro-arrow{transform:translate(3px,-3px)}
+@keyframes introButtonRise{from{opacity:0;margin-top:14px}to{opacity:1;margin-top:0}}
+@media(max-width:700px){
+  .intro-explore{min-width:210px;min-height:48px;padding:13px 20px}
+  body.intro-lock .rail{top:auto;bottom:16px;right:50%;transform:translateX(50%);max-width:calc(100vw - 24px);flex-direction:row;flex-wrap:wrap;justify-content:center;padding:7px 9px}
+}
+@media(prefers-reduced-motion:reduce){.intro-explore{animation:none;opacity:1}.intro-screen{transition:none}}
+
+/* ---------- Arch-shaped portrait frame ---------- */
+.portrait-wrap{max-width:min(380px,88vw)}
+.portrait-frame{padding:0;aspect-ratio:4/5;border:1px solid rgba(244,168,187,.45);border-radius:999px 999px 26px 26px;overflow:hidden;background:#15131b;box-shadow:0 22px 56px #0007}
+.portrait-frame:before{inset:9px;border:1px solid rgba(255,255,255,.22);border-radius:999px 999px 18px 18px}
+.portrait-frame img{position:absolute;inset:0;width:100%;height:100%;max-height:none;aspect-ratio:auto;object-fit:cover;object-position:50% 24%;border-radius:0;background:none}
+.portrait-wrap:before{content:"";position:absolute;inset:-12px 12px 12px -12px;border:1px solid rgba(155,185,154,.3);border-radius:999px 999px 26px 26px;pointer-events:none}
+
+/* ---------- Hero: copy on the left, arch portrait on the right ---------- */
+#home .hero-wrap{display:flex;align-items:center;justify-content:space-between;gap:clamp(32px,6vw,90px)}
+#home .hero-copy{flex:1 1 auto;min-width:0;max-width:640px}
+#home .hero-portrait{flex:0 0 auto;width:min(340px,34vw);margin:0;pointer-events:auto;animation:heroPortraitIn 1.1s .15s cubic-bezier(.2,.75,.25,1) both}
+@keyframes heroPortraitIn{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@media(max-width:900px){
+  #home .hero-wrap{flex-direction:column-reverse;align-items:flex-start;gap:36px}
+  #home .hero-portrait{width:min(300px,76vw);align-self:center}
+}
+@media(prefers-reduced-motion:reduce){#home .hero-portrait{animation:none}}
+/* ---------- About: single centred column now that the portrait lives in the hero ---------- */
+.about-grid{grid-template-columns:1fr}
+.about-copy{max-width:820px;margin:0 auto}
+</style></head><body><div id="app"><canvas id="cv" aria-hidden="true"></canvas>
+<div class="intro-screen" id="introScreen" role="dialog" aria-modal="true" aria-label="Welcome">
+  <div class="intro-glow intro-glow-one" aria-hidden="true"></div><div class="intro-glow intro-glow-two" aria-hidden="true"></div>
+  <div class="intro-content"><button class="intro-explore" id="introExplore" type="button"><span>Explore My Portfolio</span><span class="intro-arrow" aria-hidden="true">↗</span></button></div>
+</div>
+<input id="inp" aria-label="Type to grow flowers in the garden" autocapitalize="off" autocomplete="off" spellcheck="false"><div class="progress"><div class="progress-fill"></div></div><div class="mark"><b>Alkha Mariam Mathew</b><span>BCA · Cybersecurity · Cloud · Web</span></div><button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav class="modes" aria-label="Main navigation"><button data-view="home" class="on">Home</button><button data-view="about">About</button><button data-view="skills">Skills</button><button data-view="work">Work</button><button data-view="projects">Projects</button><button data-view="contact">Contact</button></nav><main class="sheet" id="sheet" hidden></main><div class="rail" id="rail" aria-label="Garden colour palettes"></div><section class="site-section" id="home"><div class="hero-wrap"><div class="hero-copy"><div class="hero-kicker">✿ &nbsp; A little garden of ideas &amp; code</div><div class="hero-subtitle">BCA Student &nbsp;|&nbsp; Cybersecurity Enthusiast &nbsp;|&nbsp; Cloud &amp; Web Developer</div><p class="hero-description">I enjoy building thoughtful digital experiences, exploring cybersecurity, and growing my skills across cloud technologies and web development. Welcome to my little corner of the internet.</p><div class="hero-actions"><a class="btn btn-primary" href="#projects" data-jump="projects">Explore My Work&nbsp; ↗</a><a class="btn btn-ghost" href="#contact" data-jump="contact">Contact Me&nbsp; →</a></div><div class="social-links"><a href="https://www.linkedin.com/in/alkha-mariam-mathew/" target="_blank" rel="noopener">LinkedIn ↗</a><a href="https://github.com/alkha-mariam" target="_blank" rel="noopener">GitHub ↗</a></div></div><div class="portrait-wrap hero-portrait"><div class="portrait-frame"><img src="assets/profile.jpg" alt="Portrait of Alkha Mariam Mathew"></div><div class="portrait-caption">Curious mind · Constantly growing</div></div></div><div class="scroll-cue">Scroll to explore</div></section>
+<section class="site-section" id="about"><div class="container"><div class="eyebrow">01 / The person behind the pixels</div><div class="about-grid"><div class="about-copy reveal"><h2 class="section-title">A little about <span class="accent">me.</span></h2><p>I'm a final-year Bachelor of Computer Applications student with practical experience in cybersecurity, cloud infrastructure and web development. Through my internship at IPSR Solutions Limited, I explored Linux system hardening, vulnerability testing, network analysis and containerisation.</p><p>I'm interested in opportunities across software engineering, web development and cybersecurity, where I can apply what I've learned, take on real-world challenges and keep growing.</p><div class="info-grid"><article class="info-card"><div class="card-label">Education · 2024–Present</div><h3>Bachelor of Computer Applications</h3><p>Marian College Kuttikkanam Autonomous, Kerala<br>CGPA: 84.68%</p></article><article class="info-card"><div class="card-label">Higher Secondary · 2022–2024</div><h3>Computer Science</h3><p>St. Anne's GHSS, Kottayam<br>Percentage: 88.1%</p></article><article class="info-card"><div class="card-label">Courses &amp; training</div><h3>Learning beyond class</h3><p>Ethical Hacking and Cloud Security Training — ICT Academy of Kerala; Hardware Hacking Workshop; Asthra 10.0.</p></article><article class="info-card"><div class="card-label">Beyond the screen</div><h3>Community &amp; creativity</h3><p>NCC cadet (10-day ATC), SAHYA event volunteer, and creative design with Canva and CapCut.</p></article><article class="info-card ctf-card"><div class="card-label">CTF participation</div><h3>Learning through challenges</h3><p>BeSec.CTF (Team Hexora), ApoorvCTF, DarkCTF and Eschaton CTF.</p></article></div></div></div></div></section>
+<section class="site-section" id="skills"><div class="container"><div class="eyebrow">02 / My growing toolkit</div><h2 class="section-title">Skills &amp; <span class="accent">technologies.</span></h2><p class="section-intro">A practical toolkit built through coursework, hands-on labs, projects and continuous exploration. No artificial ratings — just the technologies I've worked with.</p><div class="skills-grid"><article class="skill-card reveal"><div class="skill-icon">⌘</div><h3>Programming</h3><p>Python · C++ · Java · SQL</p></article><article class="skill-card reveal"><div class="skill-icon">✧</div><h3>Frontend</h3><p>React.js · JavaScript · HTML · CSS · Express.js · Node.js</p></article><article class="skill-card reveal"><div class="skill-icon">⌁</div><h3>Backend</h3><p>Django</p></article><article class="skill-card reveal"><div class="skill-icon">◈</div><h3>Database</h3><p>MySQL · Database Management Systems</p></article><article class="skill-card reveal"><div class="skill-icon">⌬</div><h3>Cybersecurity</h3><p>Metasploit · Burp Suite · Wireshark · Kali Linux</p></article><article class="skill-card reveal"><div class="skill-icon">⤳</div><h3>Networking</h3><p>GNS3 · VPN · BGP · Static &amp; Dynamic Routing</p></article><article class="skill-card reveal"><div class="skill-icon">☁</div><h3>Cloud &amp; DevOps</h3><p>AWS · Azure · Docker · GitHub Actions</p></article><article class="skill-card reveal"><div class="skill-icon">⌘</div><h3>Tools &amp; Systems</h3><p>Git · GitHub · Linux · Windows · Command Line</p></article></div></div></section>
+<section class="site-section" id="work"><div class="container"><div class="eyebrow">03 / Where I've learned by doing</div><h2 class="section-title">Experience &amp; <span class="accent">growth.</span></h2><p class="section-intro">Hands-on learning through security practice, infrastructure work and a cloud architecture capstone.</p><div class="timeline"><div class="timeline-item reveal"><article class="timeline-card"><div class="timeline-meta">INTERNSHIP · IPSR SOLUTIONS LIMITED</div><h3>Cybersecurity Intern</h3><ul><li>Performed Linux system security hardening and reviewed local and remote system permissions.</li><li>Identified and tested vulnerabilities using Metasploit and Burp Suite.</li><li>Captured and analysed network traffic with Wireshark to detect anomalies.</li><li>Containerised application environments and services using Docker Desktop.</li><li>Solved Capture The Flag challenges across offensive security and cryptography.</li><li>Capstone: designed a secure multi-tier AWS architecture for a Django application, with CI/CD, monitoring and least-privilege access.</li></ul></article></div></div></div></section>
+<section class="site-section" id="projects"><div class="container"><div class="eyebrow">04 / Selected things I've built</div><h2 class="section-title">Projects in <span class="accent">bloom.</span></h2><p class="section-intro">A selection of web development, cloud infrastructure and hands-on security work.</p><div class="projects-grid"><article class="project-card reveal"><div class="project-number">PROJECT 01</div><div class="project-symbol">🚲</div><h3>Cycle Rental System — VelGo</h3><p>A multi-page React application with Home, About, Cycles, Pricing, Booking, Rental History and Contact pages, reusable components and client-side routing.</p><div class="tags"><span>React.js</span><span>React Router</span></div><a class="project-link" href="https://github.com/alkha-mariam" target="_blank" rel="noopener">Explore GitHub profile ↗</a></article><article class="project-card reveal"><div class="project-number">PROJECT 02</div><div class="project-symbol">☁</div><h3>Secure Multi-Tier Cloud Architecture &amp; DevOps Pipeline</h3><p>A Django task dashboard deployed across a multi-tier VPC with ALB, EC2 (Nginx/Gunicorn) and RDS MySQL, plus CI/CD, monitoring and least-privilege IAM.</p><div class="tags"><span>Django</span><span>AWS</span><span>GitHub Actions</span><span>Docker</span></div><a class="project-link" href="https://github.com/alkha-mariam" target="_blank" rel="noopener">Explore GitHub profile ↗</a></article><article class="project-card reveal"><div class="project-number">PROJECT 03</div><div class="project-symbol">⌬</div><h3>Cybersecurity &amp; Network Labs</h3><p>Packet analysis with Wireshark, Linux security policy configuration, vulnerability testing with Burp Suite and Metasploit, and virtual network simulations in GNS3.</p><div class="tags"><span>Wireshark</span><span>Metasploit</span><span>GNS3</span><span>Linux</span></div><a class="project-link" href="https://github.com/alkha-mariam" target="_blank" rel="noopener">Explore GitHub profile ↗</a></article><article class="project-card reveal"><div class="project-number">PROJECT 04</div><div class="project-symbol">✿</div><h3>Personal Portfolio Website</h3><p>A responsive portfolio experience built with semantic HTML, CSS and JavaScript, bringing together a creative botanical concept and interactive canvas artwork.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a class="project-link" href="https://github.com/alkha-mariam" target="_blank" rel="noopener">Explore GitHub profile ↗</a></article></div></div></section>
+<section class="site-section" id="contact"><div class="container"><div class="eyebrow">05 / A new connection</div><h2 class="section-title">Let's grow something <span class="accent">together.</span></h2><p class="section-intro">I'm open to entry-level opportunities, collaborations and conversations around software development, cloud and cybersecurity. I'd love to hear from you.</p><div class="contact-grid"><div class="contact-cards"><article class="contact-card"><small>Email</small><a href="mailto:alkhamariammathew@gmail.com">alkhamariammathew@gmail.com</a></article><article class="contact-card"><small>LinkedIn</small><a href="https://www.linkedin.com/in/alkha-mariam-mathew/" target="_blank" rel="noopener">Connect with me ↗</a></article><article class="contact-card"><small>GitHub</small><a href="https://github.com/alkha-mariam" target="_blank" rel="noopener">View my repositories ↗</a></article></div><aside class="contact-note"><h3>Every good idea starts with a hello.</h3><p>Have an opportunity, project idea or simply want to connect? Reach out by email or explore my work and professional profile.</p><a class="btn btn-primary" href="assets/Alkha_Mariam_Mathew_Resume_Finnal.pdf" download>Download résumé&nbsp; ↓</a></aside></div></div></section><footer class="footer">© 2026 Alkha Mariam Mathew · Grown with curiosity &amp; a little code.</footer><button class="back-top" aria-label="Back to top" title="Back to top">↑</button></div><script>
+(() => {
+const $ = id => document.getElementById(id);
+
+const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const PROPS = { boil: !RM, recoil: 20, density: 1 };
+const ul = a => '<ul>' + a.map(x => '<li>' + x + '</li>').join('') + '</ul>';
+const rows = a => '<dl>' + a.map(([k, v]) => '<div class="row"><dt>' + k + '</dt><dd>' + v + '</dd></div>').join('') + '</dl>';
+const VIEWS = {
+  home: { word: 'Alkha Mariam Mathew' },
+  about: { word: 'About', html:
+    '<p>Final-year BCA student with practical experience in cybersecurity, cloud infrastructure and web development, including React.js, Python, Django and MySQL. I have done Linux system hardening, vulnerability testing, network analysis and containerization during my internship at IPSR Solutions Limited, and I compete in CTFs.</p>' +
+    '<p>I’m looking for an entry-level Software Engineering, Web Development or Cybersecurity role where I can apply these skills, take on real-world challenges and keep growing.</p>' +
+    '<h3>Education</h3>' + rows([
+      ['2024 – Present', '<b>Bachelor of Computer Applications (BCA)</b><br>Marian College Kuttikkanam Autonomous, Kerala<br>CGPA 84.68%'],
+      ['2022 – 2024', '<b>Higher Secondary (Class XII), Computer Science</b><br>St. Anne’s GHSS, Kottayam<br>88.1%']]) +
+    '<h3>Courses &amp; training</h3>' + ul([
+      'Ethical Hacking and Cloud Security Training, ICT Academy of Kerala', 'Hardware Hacking Workshop',
+      'Asthra 10.0, St. Joseph’s College of Engineering and Technology, Palai',
+      'CTF competitions: BeSec.CTF (Team Hexora), ApoorvCTF, DarkCTF, Eschaton CTF']) +
+    '<h3>Beyond the screen</h3>' + ul([
+      'NCC cadet: completed the 10-day Annual Training Camp (ATC)',
+      'Event volunteer for SAHYA, the inter-collegiate festival of Marian College Kuttikkanam',
+      'Creative design with Canva and CapCut, alongside hands-on crafts',
+      'Problem-solving, teamwork, leadership and a habit of learning new tools quickly']) },
+  skills: { word: 'Skills', html: rows([
+    ['Programming', 'Python, C++, Java, SQL'], ['Frontend', 'React.js, JavaScript, HTML, CSS, Express.js, Node.js'], ['Backend', 'Django'],
+    ['Database', 'MySQL, Database Management Systems'], ['Security &amp; testing', 'Metasploit, Burp Suite, Wireshark, Kali Linux'],
+    ['Networking', 'GNS3, VPN, BGP, static &amp; dynamic routing'],
+    ['Cloud &amp; DevOps', 'AWS (EC2, IAM, VPC, RDS, S3, CloudWatch), Azure (Entra ID), Docker, GitHub Actions'],
+    ['Tools &amp; systems', 'Git, GitHub, Linux (Ubuntu), Windows, command line'],
+    ['Concepts', 'System hardening, vulnerability assessment, packet analysis, CTF problem solving']]) },
+  work: { word: 'Work', html:
+    '<h3>Cybersecurity Intern</h3><p class="meta">IPSR Solutions Limited</p>' + ul([
+      'Performed Linux system security hardening and reviewed local and remote system permissions.',
+      'Identified and tested vulnerabilities using Metasploit and Burp Suite.',
+      'Captured and analyzed network traffic with Wireshark to detect anomalies.',
+      'Containerized application environments and services using Docker Desktop.',
+      'Solved Capture The Flag challenges across offensive security and cryptography.',
+      'Capstone: designed a secure multi-tier AWS architecture with CI/CD, monitoring and least-privilege access for a Django application.']) },
+  projects: { word: 'Projects', html:
+    '<h3>Cycle Rental System (VelGo)</h3><p class="meta">React.js · React Router</p>' + ul([
+      'Multi-page React web application with seven pages: Home, About, Cycles, Pricing, Booking, Rental History and Contact.',
+      'Built with functional components, a reusable Navbar and Footer, client-side routing and a dark, modern UI.']) +
+    '<h3>Secure Multi-Tier Cloud Architecture &amp; DevOps Pipeline</h3><p class="meta">Django · AWS</p>' + ul([
+      'Deployed a Django task management dashboard across a multi-tier VPC with ALB, EC2 (Nginx/Gunicorn) and RDS MySQL.',
+      'Added GitHub Actions CI/CD, CloudWatch/SNS monitoring, fail2ban and IAM least-privilege access.']) +
+    '<h3>Cybersecurity &amp; Network Labs</h3><p class="meta">Wireshark · Metasploit · GNS3 · Linux</p>' + ul([
+      'Analyzed packet captures in Wireshark to identify protocol behavior and anomalies.',
+      'Configured Linux security policies and tested systems with Burp Suite and Metasploit.',
+      'Simulated virtual networks in GNS3 with VPN gateways, static/dynamic routing and BGP.']) +
+    '<h3>Personal Portfolio Website</h3><p class="meta">HTML · CSS</p>' + ul([
+      'Mobile-responsive portfolio built from scratch with semantic HTML and CSS, hosted on GitHub.']) },
+  contact: { word: 'Contact', html:
+    '<p>Open to entry-level roles in software engineering, web development and cybersecurity.</p>' + rows([
+      ['Email', '<a href="mailto:alkhamariammathew@gmail.com">alkhamariammathew@gmail.com</a>'],
+      ['LinkedIn', '<a href="https://www.linkedin.com/in/alkha-mariam-mathew/" target="_blank" rel="noopener">linkedin.com/in/alkha-mariam-mathew</a>'],
+      ['GitHub', '<a href="https://github.com/alkha-mariam" target="_blank" rel="noopener">github.com/alkha-mariam</a>'],
+      ['Résumé', '<a href="assets/Alkha_Mariam_Mathew_Resume_Finnal.pdf" download>Download (.pdf)</a>']]) }
+};
+
+
+class Garden {
+  constructor() {
+    this.cv = $('cv'); this.inp = $('inp');
+    this.SENT = String.fromCharCode(0x200b);
+    this.F = '"Playfair Display",Georgia,serif';
+    // name, background, petals [outer rim, mid, heart], stem & leaf, flower line, type
+    this.PAL = [
+      ['Dusk',      '#0B0B12', ['#FFB3C7', '#F06292', '#B0174F'], '#3E8C72', '#FFE3EC', '#F5F0EA'],
+      ['Marigold',  '#15110A', ['#FFD180', '#FF9800', '#D24A00'], '#6A9A2E', '#FFF3D6', '#FFF8EC'],
+      ['Lavender',  '#EFEBF6', ['#D9CCF0', '#9575CD', '#4B2A9B'], '#2E5E4E', '#F6F1FF', '#1B1530'],
+      ['Coral reef','#0E1C1F', ['#FFCCBC', '#FF7043', '#C2361A'], '#4DB6AC', '#FFF1EA', '#FFFFFF'],
+      ['Peony',     '#FBF3EE', ['#F8BBD0', '#EC407A', '#9C0F4E'], '#1F5F2A', '#FFF0F5', '#151515'],
+      ['Indigo',    '#0A0F2C', ['#C5CAE9', '#6F7FD6', '#2A3596'], '#8BC34A', '#EEF0FF', '#FFFFFF'],
+      ['Saffron',   '#7A1F12', ['#FFE7A3', '#FFC233', '#F08A00'], '#F3D9B1', '#7A1F12', '#FFF4E0'],
+      ['Mint',      '#E6F2EC', ['#FFD3C2', '#FF8A65', '#D84315'], '#2F7D5B', '#FFF6F1', '#0F2A20'],
+      ['Ember',     '#000000', ['#FF8A5B', '#FF3D00', '#9E0000'], '#3257FF', '#FFD3C2', '#FFFFFF'],
+      ['Mono',      '#000000', ['#F5F5F5', '#BDBDBD', '#7A7A7A'], '#5A5A5A', '#111111', '#FFFFFF']
+    ];
+    this.state = { mode: 'type', view: 'home', palette: 0 };
+    this.mount();
+  }
+  setState(p, cb) { Object.assign(this.state, p); this.renderUI(); cb && cb(); }
+
+  mount() {
+    this.letters = []; this.uid = 1; this.cache = {}; this.Sd = 0; this.St = 0; this.wrapped = false;
+    this.t0 = performance.now(); this.lastKey = 0; this.rand = Math.random;
+    this.g = this.cv.getContext('2d');
+    this.fa = {}; this.mx = null; this.flies = []; this.perch = []; this.gifts = [];
+    this.buildUI();
+    window.addEventListener('resize', () => this.resize());
+    this.resize();
+    window.addEventListener('keydown', e => this.key(e));
+    window.addEventListener('pointermove', e => { this.mx = e.clientX; this.my = e.clientY; });
+    document.addEventListener('mouseout', e => { if (!e.relatedTarget) this.mx = null; });
+    this.touch = !!(window.matchMedia && matchMedia('(pointer: coarse)').matches);
+    if (this.touch) document.documentElement.setAttribute('data-touch', '');
+    this.ptype = 'mouse';
+    window.addEventListener('pointerdown', e => { this.ptype = e.pointerType || 'mouse'; }, true);
+    const up = e => { if (e.pointerType && e.pointerType !== 'mouse') this.mx = null; };
+    window.addEventListener('pointerup', up); window.addEventListener('pointercancel', up);
+    const fld = this.inp;
+    this.iv = this.SENT; fld.value = this.SENT;
+    fld.addEventListener('compositionstart', () => { this.composing = true; });
+    fld.addEventListener('compositionend', () => { this.composing = false; setTimeout(() => { if (!this.composing) this.inputDiff(fld); }, 0); });
+    fld.addEventListener('input', e => this.inputDiff(e.target));
+    this.vv = window.visualViewport || null; this.vvMax = 0;
+    if (this.vv && this.touch) { const f = () => this.syncVV(); this.vv.addEventListener('resize', f); this.vv.addEventListener('scroll', f); this.syncVV(); }
+    // click/tap on the garden: focus, call a butterfly; double-click plants a rose
+    const app = $('app');
+    app.addEventListener('pointerdown', ev => {
+      if (this.state.mode !== 'type') return;
+      const touch = ev.pointerType && ev.pointerType !== 'mouse', onCanvas = ev.target === this.cv || !!ev.target.closest('#home');
+      if (touch) { if (ev.cancelable && (onCanvas || ev.target.closest('button'))) ev.preventDefault(); }
+      else this.inp.focus({ preventScroll: true });
+      if (onCanvas) { this.spawnFly(ev.clientX, ev.clientY); this.plantCheck(ev); }
+    });
+    app.addEventListener('click', ev => { if (this.state.mode === 'type' && this.ptype !== 'mouse' && ev.target === this.cv) this.inp.focus({ preventScroll: true }); });
+    const v0 = location.hash.slice(1), start = () => { this.cache = {}; this.go(VIEWS[v0] ? v0 : 'home'); };
+    if (document.fonts) document.fonts.load(`700 100px ${this.F}`).catch(() => {}).then(start); else start();
+    const loop = () => { this.raf = requestAnimationFrame(loop); if (!document.hidden) this.frame(); };
+    loop();
+    if (!this.touch) setTimeout(() => this.inp.focus({ preventScroll: true }), 50);
+    if (/[?&]tgtest/.test(location.search)) window.__tg = this;
+    this.renderUI();
+  }
+
+  // ---------- UI ----------
+  buildUI() {
+    document.querySelectorAll('.modes button').forEach(b => b.addEventListener('click', () => this.go(b.dataset.view)));
+    const rail = $('rail');
+    this.PAL.forEach((p, i) => {
+      const b = document.createElement('button'); b.className = 'sw'; b.title = p[0]; b.setAttribute('aria-label', p[0] + ' palette');
+      b.style.background = p[1]; b.innerHTML = `<i style="background:conic-gradient(${p[2][2]} 0 33%,${p[2][1]} 0 66%,${p[2][0]} 0)"></i>`;
+      b.addEventListener('pointerdown', e => e.stopPropagation());
+      b.addEventListener('click', e => { e.stopPropagation(); this.setState({ palette: i }, () => this.refocus()); });
+      rail.appendChild(b);
+    });
+  }
+  renderUI() {
+    const s = this.state, p = this.PAL[s.palette], root = document.documentElement.style;
+    root.setProperty('--bg', p[1]); root.setProperty('--ink', p[5]); root.setProperty('--rose', p[2][1]); root.setProperty('--rose2', p[2][2]); root.setProperty('--leaf', p[3]);
+    document.body.classList.toggle('read', s.mode === 'read');
+    document.querySelectorAll('.modes button').forEach(b => { const on = b.dataset.view === s.view; b.classList.toggle('on', on); if (on) b.setAttribute('aria-current', 'page'); else b.removeAttribute('aria-current'); });
+    [...$('rail').children].forEach((b, i) => b.classList.toggle('on', i === s.palette));
+  }
+  // switch section: clear the garden, regrow the section's title, show its content
+  go(v) {
+    const V = VIEWS[v]; if (!V) return;
+    const home = v === 'home';
+    this.sf = home ? 0.28 : 0.36; this.band = home ? 1 : 0.36;
+    this.setState({ view: v, mode: home ? 'type' : 'read' });
+    const sheet = $('sheet'); if (sheet) sheet.hidden = true;
+    try { history.replaceState(null, '', '#' + v); } catch (e) {}
+    this.letters = []; this.layout(true);
+    const tok = this.tok = (this.tok || 0) + 1; let i = 0;
+    const step = () => { if (tok !== this.tok || i >= V.word.length) return; this.add(V.word[i++], performance.now() - (RM ? 4000 : 0)); if (!RM) setTimeout(step, 110); else step(); };
+    step();
+    document.querySelectorAll('.site-section').forEach(s => s.classList.toggle('active-section', s.id === v));
+    if (home) this.refocus();
+  }
+
+  // ---------- butterflies ----------
+  spawnFly(cx, cy) {
+    if (this.flies.length >= 6) { const o = this.flies.find(f => f.st !== 'leave'); if (o) this.flyOff(o); }
+    const taken = new Set(this.flies.filter(f => f.st !== 'leave').map(f => f.pid));
+    let best = null, bd = 1e9;
+    for (const p of this.perch) { if (taken.has(p.id)) continue; const d = Math.hypot(p.x - cx, p.y - cy); if (d < bd) { bd = d; best = p; } }
+    const left = cx < this.W / 2, sz = Math.max(9, this.Sd * 0.09);
+    this.flies.push({ x: left ? -40 : this.W + 40, y: cy + (Math.random() - 0.5) * this.H * 0.4, vx: 0, vy: 0,
+      st: best ? 'fly' : 'wander', pid: best ? best.id : null, hx: cx, hy: cy, t0: performance.now(), ph: Math.random() * 6, sz, seed: Math.random() * 100, ang: 0 });
+  }
+  flyOff(f) { f.st = 'leave'; f.pid = null; f.ex = f.x < this.W / 2 ? -80 : this.W + 80; f.ey = f.y - this.H * 0.3; }
+  drawFlies(B, now, C) {
+    const dt = Math.min(48, now - (this._fl || now)); this._fl = now;
+    const byId = {}; for (const p of this.perch) byId[p.id] = p;
+    this.flies = this.flies.filter(f => {
+      const t = (now - f.t0) / 1000;
+      let tx, ty;
+      if (f.st === 'sit' || f.st === 'fly') {
+        const p = byId[f.pid];
+        if (!p) this.flyOff(f);
+        else { tx = p.x + p.R * 0.05; ty = p.y - p.R * 0.55; }
+      }
+      if (f.st === 'wander') { tx = f.hx + Math.sin(t * 1.3 + f.seed) * 70; ty = f.hy + Math.sin(t * 2.1 + f.seed) * 40; if (t > 3.5) this.flyOff(f); }
+      if (f.st === 'leave') { tx = f.ex; ty = f.ey; }
+      if (f.st === 'sit') {
+        f.x += (tx - f.x) * 0.35; f.y += (ty - f.y) * 0.35; f.ang *= 0.85;
+        f.ph += dt * 0.004;
+        const burst = Math.sin(now / 1000 * 0.9 + f.seed) > 0.75;
+        f.open = burst ? 0.2 + 0.8 * Math.abs(Math.cos(now / 1000 * 9 + f.seed)) : 0.25 + 0.15 * Math.sin(f.ph);
+      } else {
+        const dx = tx - f.x, dy = ty - f.y, d = Math.hypot(dx, dy) || 1, sp = f.st === 'leave' ? 0.42 : Math.min(0.34, 0.06 + d * 0.0016);
+        const flut = Math.sin(t * 7 + f.seed) * 0.12, wob = Math.cos(t * 4.3 + f.seed) * 0.1;
+        const ax = (dx / d * sp + wob) - f.vx, ay = (dy / d * sp + flut) - f.vy;
+        f.vx += ax * 0.06 * dt / 16; f.vy += ay * 0.06 * dt / 16;
+        f.x += f.vx * dt; f.y += f.vy * dt + Math.sin(t * 13 + f.seed) * 0.6;
+        f.ang += (Math.max(-0.5, Math.min(0.5, f.vx * 1.4)) - f.ang) * 0.1;
+        f.open = Math.abs(Math.cos(t * 17 + f.seed));
+        if (f.st === 'fly' && d < 5) { f.st = 'sit'; f.ph = 0; }
+        if (f.st === 'leave' && (f.x < -60 || f.x > this.W + 60 || f.y < -60)) return false;
+      }
+      this.butterfly(B, f.x, f.y, f.sz, f.ang, f.open, C);
+      return true;
+    });
+  }
+  butterfly(B, x, y, s, ang, o, C) {
+    const ca = Math.cos(ang), sa = Math.sin(ang), T = (px, py) => [x + (px * ca - py * sa) * s, y + (px * sa + py * ca) * s];
+    const wing = (cx, cy, rx, ry, a, side) => {
+      const pts = [], c = Math.cos(a), sn = Math.sin(a);
+      for (let k = 0; k < 22; k++) { const th = k / 22 * Math.PI * 2, r = 1 + 0.08 * Math.sin(th * 3), lx = Math.cos(th) * rx * r, ly = Math.sin(th) * ry * r; pts.push(T(side * (cx + lx * c - ly * sn) * (0.12 + 0.88 * o), cy + lx * sn + ly * c)); }
+      return pts;
+    };
+    for (const sd of [-1, 1]) {
+      B.fill(wing(0.46, 0.28, 0.36, 0.3, 0.5, sd), C.text);
+      B.fill(wing(0.55, -0.32, 0.55, 0.36, -0.55, sd), C.text);
+      if (o > 0.35) B.fill(wing(0.66, -0.4, 0.13, 0.11, 0, sd), C.petals[1]);
+    }
+    const body = []; for (let k = 0; k < 18; k++) { const th = k / 18 * Math.PI * 2; body.push(T(Math.cos(th) * 0.08, Math.sin(th) * 0.48)); }
+    B.fill(body, C.blue);
+    const lw = Math.max(0.8, s * 0.05);
+    B.stroke([T(0, -0.42), T(-0.14, -0.72), T(-0.24, -0.86)], C.blue, lw);
+    B.stroke([T(0, -0.42), T(0.14, -0.72), T(0.24, -0.86)], C.blue, lw);
+  }
+  faceTurn(e, x, y) {
+    let wx = 0, wy = 0;
+    const A = this.near(x, y);
+    if (A) {
+      const dx = A[0] - x, dy = A[1] - y, d = Math.hypot(dx, dy), reach = 300;
+      if (d < reach && d > 0.001) { const w = 1 - d / reach, s = w * w * (3 - 2 * w) * Math.min(1, d / 40); wx = dx / d * s; wy = dy / d * s; }
+    }
+    const c = this.fa[e.id] || [0, 0];
+    c[0] += (wx - c[0]) * 0.09; c[1] += (wy - c[1]) * 0.09;
+    this.fa[e.id] = c;
+    return c;
+  }
+  near() { return this.mx != null ? [this.mx, this.my] : null; }
+  plantCheck(e) {
+    const now = performance.now(), lp = this.lastTap;
+    this.lastTap = { t: now, x: e.clientX, y: e.clientY };
+    if (lp && now - lp.t < 340 && Math.hypot(e.clientX - lp.x, e.clientY - lp.y) < 40 && now - (this.lastPlant || 0) > 1200) {
+      this.lastPlant = now; this.lastTap = null;
+      const r = this.rng(Math.floor(Math.random() * 1e6) || 1);
+      this.gifts.push({ x: e.clientX / this.W, y: e.clientY / this.H, t0: now, rot: (r() - 0.5) * 0.8, e: { ph1: r() * 6.283, ph2: r() * 6.283, turns: 1.4 + r() * 0.5 } });
+      if (this.gifts.length > 14) this.gifts.shift();
+    }
+  }
+
+  // ---------- math ----------
+  h(n) { const x = Math.sin(n) * 43758.5453; return x - Math.floor(x); }
+  spr(t, k = 7, w = 16) { if (t <= 0) return 0; return 1 - Math.exp(-t * k) * Math.cos(t * w); }
+  eo(t) { if (t <= 0) return 0; if (t >= 1) return 1; return 1 - Math.pow(1 - t, 3); }
+  rng(seed) {
+    let s = seed | 0;
+    return () => { s = (s + 0x6D2B79F5) | 0; let t = Math.imul(s ^ (s >>> 15), 1 | s); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
+  }
+  bez(a, b, c, d, n) {
+    const P = [];
+    for (let i = 0; i <= n; i++) { const t = i / n, u = 1 - t;
+      P.push([u*u*u*a[0] + 3*u*u*t*b[0] + 3*u*t*t*c[0] + t*t*t*d[0], u*u*u*a[1] + 3*u*u*t*b[1] + 3*u*t*t*c[1] + t*t*t*d[1]]); }
+    return P;
+  }
+  at(P, u) {
+    const n = P.length; const i = Math.min(n - 2, Math.max(1, Math.round(u * (n - 1))));
+    return [P[i], Math.atan2(P[i+1][1] - P[i-1][1], P[i+1][0] - P[i-1][0])];
+  }
+  jit(id, f, amp) {
+    if (!amp) return [0, 0, 0];
+    return [(this.h(id*1.37 + f*7.13)*2 - 1)*amp, (this.h(id*2.71 + f*3.11)*2 - 1)*amp, (this.h(id*5.3 + f*1.7)*2 - 1)*0.035];
+  }
+  path(c, p, closed) {
+    const n = p.length; if (n < 2) return;
+    const m = (a, b) => [(a[0] + b[0]) / 2, (a[1] + b[1]) / 2];
+    if (closed) {
+      const s = m(p[n-1], p[0]); c.moveTo(s[0], s[1]);
+      for (let i = 0; i < n; i++) { const q = m(p[i], p[(i+1) % n]); c.quadraticCurveTo(p[i][0], p[i][1], q[0], q[1]); }
+      c.closePath();
+    } else {
+      c.moveTo(p[0][0], p[0][1]);
+      for (let i = 1; i < n - 1; i++) { const q = m(p[i], p[i+1]); c.quadraticCurveTo(p[i][0], p[i][1], q[0], q[1]); }
+      c.lineTo(p[n-1][0], p[n-1][1]);
+    }
+  }
+  backend(g) {
+    return {
+      fill: (p, col) => { g.beginPath(); this.path(g, p, true); g.fillStyle = col; g.fill(); },
+      stroke: (p, col, w) => { g.beginPath(); this.path(g, p, false); g.strokeStyle = col; g.lineWidth = w; g.lineCap = 'round'; g.lineJoin = 'round'; g.stroke(); },
+      rect: (x, y, w, h, col) => { g.fillStyle = col; g.fillRect(x, y, w, h); },
+      text: (ch, x, y, S, col) => { g.font = `700 ${S}px ${this.F}`; g.textAlign = 'center'; g.textBaseline = 'alphabetic'; g.fillStyle = col; g.fillText(ch, x, y); }
+    };
+  }
+  vine(base, dir, len, amp, waves, ph, bend, n) {
+    n = n || 40; const P = [[base[0], base[1]]], step = len / n; let x = base[0], y = base[1];
+    for (let i = 1; i <= n; i++) {
+      const u = i / n, a = dir + bend * u + amp * Math.sin(u * Math.PI * waves + ph) * Math.min(1, u * 3);
+      x += Math.cos(a) * step; y += Math.sin(a) * step; P.push([x, y]);
+    }
+    return P;
+  }
+  curl(P, sign, rad) {
+    const n = P.length, e = P[n - 1], a = Math.atan2(e[1] - P[n - 2][1], e[0] - P[n - 2][0]);
+    const c = [e[0] - Math.sin(a) * sign * rad, e[1] + Math.cos(a) * sign * rad];
+    const a0 = Math.atan2(e[1] - c[1], e[0] - c[0]);
+    for (let i = 1; i <= 14; i++) { const u = i / 14, t = a0 + sign * u * Math.PI * 1.6, rr = rad * (1 - 0.5 * u); P.push([c[0] + Math.cos(t) * rr, c[1] + Math.sin(t) * rr]); }
+    return P;
+  }
+  weave(r, startLayer) {
+    const cuts = []; const nc = 1 + Math.floor(r() * 3);
+    for (let i = 0; i < nc; i++) cuts.push(0.15 + r() * 0.7);
+    cuts.sort((a, b) => a - b);
+    const segs = []; let u0 = 0, layer = startLayer;
+    for (const c of cuts) {
+      if (c <= u0) continue;
+      segs.push({ u0, u1: c, layer });
+      if (r() < 0.3) { const g = 0.02 + r() * 0.03; u0 = Math.min(0.98, c + g); } else u0 = c;
+      layer = 1 - layer;
+    }
+    segs.push({ u0, u1: 1, layer });
+    return segs;
+  }
+  layerAt(segs, u) { for (const s of segs) if (u >= s.u0 && u <= s.u1) return s.layer; return segs[segs.length - 1].layer; }
+
+  // ---------- layout ----------
+  resize() {
+    const c = this.cv, r = c.getBoundingClientRect(), d = window.devicePixelRatio || 1;
+    if (!r.width) return;
+    this.W = r.width; this.H = r.height; this.dpr = d;
+    c.width = Math.round(r.width * d); c.height = Math.round(r.height * d);
+    this.layout(true);
+  }
+  mw(ch) {
+    if (this.cache[ch] != null) return this.cache[ch];
+    this.g.font = `700 100px ${this.F}`;
+    let w = this.g.measureText(ch).width / 100;
+    if (ch === ' ') w *= 1.4;
+    return (this.cache[ch] = w);
+  }
+  layoutCore(A, W, H, prevWrapped) {
+    const maxW = W * 0.78, S0 = H * (this.sf || 0.28), LH = 2.1;
+    const ws = A.map(l => this.mw(l.ch));
+    const words = []; let cur = null;
+    A.forEach((l, i) => {
+      if (l.ch === ' ') { if (cur) { words.push(cur); cur = null; } words.push({ sp: true, idx: [i] }); }
+      else { if (!cur) cur = { idx: [] }; cur.idx.push(i); }
+    });
+    if (cur) words.push(cur);
+    const lineW = (li, S) => { let e = li.length; while (e > 0 && A[li[e-1]].ch === ' ') e--; let w = 0; for (let k = 0; k < e; k++) w += ws[li[k]]; return w * S; };
+    const wrap = S => {
+      const lines = [[]]; let lw = 0;
+      for (const w of words) {
+        const ww = w.idx.reduce((s, i) => s + ws[i], 0) * S;
+        if (!w.sp && lw > 0 && lw + ww > maxW) { lines.push([]); lw = 0; }
+        lines[lines.length - 1].push(...w.idx); lw += ww;
+      }
+      return lines;
+    };
+    let lines = [A.map((_, i) => i)];
+    const unit = lineW(lines[0], 1);
+    let S = unit > 0 ? Math.min(S0, maxW / unit) : S0;
+    const multi = words.filter(w => !w.sp).length > 1;
+    let wrapped = multi && (S < H * 0.1 || (prevWrapped && S < H * 0.14));
+    if (wrapped) {
+      let lo = H * 0.03, hi = H * 0.15;
+      for (let k = 0; k < 22; k++) {
+        const mid = (lo + hi) / 2, ls = wrap(mid);
+        const ok = ls.every(li => lineW(li, mid) <= maxW) && ls.length * LH * mid <= H * 0.82;
+        if (ok) lo = mid; else hi = mid;
+      }
+      S = lo; lines = wrap(S);
+      if (lines.length < 2) wrapped = false;
+    }
+    const n = lines.length, lh = LH * S;
+    lines.forEach((li, k) => {
+      let x = W / 2 - lineW(li, S) / 2;
+      const y = H / 2 + (k - (n - 1) / 2) * lh + 0.33 * S;
+      li.forEach(i => { const l = A[i], w = ws[i] * S; l.tx = x + w / 2; l.ty = y; l.tw = w; l.line = k; x += w; });
+    });
+    return { S, wrapped, n };
+  }
+  layout(snap) {
+    if (!this.W) return;
+    const A = this.letters.filter(l => !l.dead);
+    const res = this.layoutCore(A, this.W, this.H * (this.band || 1), this.wrapped);
+    this.wrapped = res.wrapped;
+    A.forEach(l => { if (l.x == null) { l.x = l.tx; l.y = l.ty; } });
+    const S = res.S, last = A[A.length - 1];
+    this.St = S;
+    this.ctx_ = last ? last.tx + last.tw / 2 + 0.07 * S : this.W / 2;
+    this.cty = last ? last.ty - 0.33 * S : this.H / 2;
+    if (snap || !this.Sd) { this.Sd = S; this.cx = this.ctx_; this.cy = this.cty; A.forEach(l => { l.x = l.tx; l.y = l.ty; }); }
+  }
+
+  // ---------- phone: keyboard + visible area ----------
+  syncVV() {
+    const vv = this.vv; if (!vv) return;
+    const w = Math.round(vv.width);
+    if (this.vvW !== w) { this.vvW = w; this.vvMax = 0; }
+    this.vvMax = Math.max(this.vvMax, vv.height);
+    const kb = this.vvMax - vv.height > 120, de = document.documentElement;
+    de.style.setProperty('--tg-top', vv.offsetTop + 'px');
+    de.style.setProperty('--tg-h', vv.height + 'px');
+    if (!kb && this.kbWas && document.activeElement === this.inp) this.inp.blur();
+    this.kbWas = kb;
+    this.resize();
+  }
+  refocus() { if (this.ptype === 'mouse' && this.state.mode === 'type') this.inp.focus({ preventScroll: true }); }
+  liveText() { return (this.letters || []).filter(l => !l.dead).map(l => l.ch).join('').trim(); }
+  wither(now) {
+    const A = this.letters.filter(l => !l.dead), last = A[A.length - 1];
+    if (!last) return;
+    last.dead = now;
+    const pv = A[A.length - 2];
+    if (pv && pv.ch !== ' ') { pv.cut = null; pv.endEls = null; pv.tb = now; }
+    this.layout();
+  }
+  inputDiff(el) {
+    const S = this.SENT;
+    if (this.state.mode !== 'type' || this._kd) { this.iv = this.composing ? el.value : S; if (!this.composing) el.value = S; return; }
+    const old = this.iv == null ? S : this.iv, cur = el.value;
+    let p = 0; while (p < old.length && p < cur.length && old[p] === cur[p]) p++;
+    let dels = old.length - p;
+    if (p === 0 && old[0] === S && old.length > 1) dels -= 1;
+    const now = performance.now(); this.lastKey = now;
+    for (let i = 0; i < dels; i++) this.wither(now);
+    for (const ch of cur.slice(p)) {
+      if (ch === S) continue;
+      if (ch.charCodeAt(0) === 10) { this.letters = []; this.layout(); } else this.add(ch, now);
+    }
+    if (this.composing) this.iv = cur; else { el.value = S; this.iv = S; }
+  }
+
+  // ---------- input ----------
+  key(e) {
+    if (this.state.mode !== 'type') return;
+    if (e.metaKey || e.ctrlKey || e.altKey) {
+      return;
+    }
+    if (e.target && e.target.tagName === 'BUTTON' && (e.key === 'Enter' || e.key === ' ')) return;
+    const now = performance.now();
+    if (e.key === 'Backspace') { e.preventDefault(); this.mark(); this.wither(now); return; }
+    if (e.key === 'Enter') { e.preventDefault(); this.mark(); this.letters = []; this.layout(); return; }
+    if (e.key.length !== 1) return;
+    e.preventDefault(); this.mark();
+    this.add(e.key, now);
+  }
+  mark() { this.lastKey = performance.now(); this._kd = true; setTimeout(() => { this._kd = false; }, 0); }
+  add(ch, now) {
+    const A = this.letters.filter(l => !l.dead), last = A[A.length - 1];
+    if (ch === ' ') {
+      if (last && last.ch !== ' ') { last.cut = now; this.genEnd(last, now - last.birth); }
+      this.letters.push({ ch: ' ', id: this.uid++, birth: now, els: [] });
+      this.layout(); return;
+    }
+    const same = last && last.ch !== ' ';
+    const l = { ch, id: this.uid++, birth: now, tb: now, ws: same ? last.ws : Math.floor(this.rand() * 1e9), wi: same ? last.wi + 1 : 0, prev: same ? last : null };
+    this.gen(l);
+    this.letters.push(l);
+    this.layout();
+  }
+
+  // ---------- growth ----------
+  wordParams(ws) {
+    const r = this.rng(ws * 7 + 13), dens = PROPS.density;
+    return { roseP: 0.3 + r() * 0.3, leafy: (0.6 + r() * 0.8) * dens, dens, lean: (r() - 0.5) * 0.6, big: 0.85 + r() * 0.45, curvy: 0.8 + r() * 0.6, bridgeP: Math.min(0.95, (0.45 + r() * 0.35) * dens), w: 0.5 };
+  }
+  grow(r, E, nid, p, o) {
+    const tip = o.tip || (r() < p.roseP ? 'rose' : r() < 0.45 ? 'fan' : r() < 0.6 ? 'leaf' : 'curl');
+    let P = o.pts || this.vine(o.base, o.dir, o.len, (0.35 + r() * 0.45) * p.curvy, 1 + r() * 1.6, r() * 6.28, (r() - 0.5) * 1.2, 40);
+    if (tip === 'curl') P = this.curl(P, r() < 0.5 ? -1 : 1, 0.05 + r() * 0.05);
+    const segs = this.weave(r, o.layer0 != null ? o.layer0 : (r() < 0.5 ? 0 : 1));
+    const dur = Math.max(320, (o.len || 0.8) * 620);
+    const thorns = []; const nt = Math.floor(r() * 2.5);
+    for (let i = 0; i < nt; i++) thorns.push({ u: 0.15 + r() * 0.65, s: r() < 0.5 ? -1 : 1 });
+    E.push({ t: 'stem', id: nid(), pts: P, segs, d0: o.d0, dur, w: o.depth ? 0.82 : 1, thorns });
+    const nl = Math.floor(r() * 2.8 * p.leafy);
+    let sd = r() < 0.5 ? -1 : 1;
+    for (let i = 0; i < nl; i++) {
+      const u = 0.25 + r() * 0.6, [q, a] = this.at(P, u); sd = -sd;
+      E.push({ t: 'leaf', id: nid(), x: q[0], y: q[1], a: a + sd * (0.55 + r() * 0.5), L: (0.14 + r() * 0.2) * (o.depth ? 0.8 : 1), bend: (r() - 0.5) * 1.2, layer: this.layerAt(segs, u), d0: o.d0 + dur * u });
+    }
+    const [tp, ta] = this.at(P, 1), td = o.d0 + dur * 0.8, tl = this.layerAt(segs, 1);
+    if (tip === 'rose') {
+      const R = (0.13 + r() * 0.15) * p.big * (o.depth ? 0.75 : 1);
+      const over = tp[1] > -0.78 && tp[1] < 0.05 && Math.abs(tp[0]) < p.w * 0.5;
+      const layer = over ? (r() < 0.22 ? 1 : 0) : (r() < 0.6 ? 1 : tl);
+      E.push({ t: 'rose', id: nid(), x: tp[0], y: tp[1], R, rot: (r() - 0.5) * 1.0, ph1: r() * 6.28, ph2: r() * 6.28, turns: 1.8 + r() * 1, layer, d0: td });
+      if (r() < 0.2) { const oo = ta + (r() < 0.5 ? 1 : -1) * 1.3; E.push({ t: 'rose', id: nid(), x: tp[0] + Math.cos(oo) * R * 1.4, y: tp[1] + Math.sin(oo) * R * 1.4, R: R * (0.6 + r() * 0.3), rot: (r() - 0.5) * 1.2, ph1: r() * 6.28, ph2: r() * 6.28, turns: 1.8 + r(), layer, d0: td + 120 }); }
+    } else if (tip === 'fan') {
+      const spread = 0.6 + r() * 0.3;
+      for (let j = 0; j < 2; j++) E.push({ t: 'leaf', id: nid(), x: tp[0], y: tp[1], a: ta + (j - 0.5) * spread, L: 0.2 + r() * 0.2, bend: (j - 0.5) * 0.8, layer: tl, d0: td + j * 60 });
+    } else if (tip === 'leaf') {
+      E.push({ t: 'leaf', id: nid(), x: tp[0], y: tp[1], a: ta + (r() - 0.5) * 0.3, L: 0.16 + r() * 0.16, bend: (r() - 0.5), layer: tl, d0: td });
+    }
+    if (!o.depth && r() < 0.3) {
+      const u = 0.35 + r() * 0.35, [q, a] = this.at(P, u);
+      this.grow(r, E, nid, p, { base: q, dir: a + (r() < 0.5 ? -1 : 1) * (0.7 + r() * 0.4), len: (o.len || 0.8) * (0.35 + r() * 0.2), d0: o.d0 + dur * u, depth: 1, layer0: this.layerAt(segs, u) });
+    }
+    return P;
+  }
+  gen(l) {
+    const r = this.rng((l.ws ^ Math.imul(l.wi + 1, 2654435761)) + Math.floor(this.rand() * 1e6));
+    const p = this.wordParams(l.ws), E = []; let k0 = 0; const nid = () => l.id * 100 + (k0++);
+    const w = this.mw(l.ch), inX = () => (r() - 0.5) * w * 0.7; p.w = w;
+    const nUp = 1 + (r() < 0.45 * p.dens ? 1 : 0);
+    for (let i = 0; i < nUp; i++) {
+      this.grow(r, E, nid, p, { base: [inX(), -r() * 0.3], dir: -Math.PI / 2 + p.lean * 0.5 + (r() - 0.5) * 0.7, len: 0.6 + r() * 0.5, d0: 40 + i * 130, tip: l.wi === 0 && i === 0 ? 'rose' : null });
+    }
+    if (r() < 0.4 * p.dens) this.grow(r, E, nid, p, { base: [inX(), -0.1 - r() * 0.35], dir: Math.PI / 2 + (r() - 0.5) * 0.8, len: 0.35 + r() * 0.35, d0: 160 });
+    if (l.prev && r() < p.bridgeP) {
+      const px = -(this.mw(l.prev.ch) + w) / 2;
+      const a = [inX(), -0.05 - r() * 0.55], b = [px + (r() - 0.5) * 0.25, -0.05 - r() * 0.55];
+      const bulge = (r() < 0.55 ? -1 : 1) * (0.4 + r() * 0.4), dx = b[0] - a[0];
+      let P = this.bez(a, [a[0] + dx * 0.15, a[1] + bulge], [b[0] - dx * 0.15, b[1] + bulge * 0.9], b, 40);
+      if (r() < 0.45) P = P.slice(0, Math.floor(P.length * (0.7 + r() * 0.2)));
+      this.grow(r, E, nid, p, { pts: P, len: Math.abs(dx) + Math.abs(bulge), d0: 90, tip: r() < 0.5 ? 'curl' : r() < 0.5 ? 'leaf' : 'rose' });
+    }
+    if (l.wi === 0) this.grow(r, E, nid, p, { base: [-w * 0.3, -0.15 - r() * 0.4], dir: Math.PI + (r() - 0.5) * 1.2, len: 0.45 + r() * 0.3, d0: 120, tip: 'curl' });
+    l.els = E;
+    l.endEls = null;
+    const T = [], tr = this.rng(l.id * 977 + Math.floor(this.rand() * 1e6));
+    this.grow(tr, T, () => l.id * 100 + 90 + T.length, p, { base: [w * 0.25, -0.1 - tr() * 0.45], dir: (tr() - 0.5) * 1.4, len: 0.45 + tr() * 0.25, d0: 0, tip: 'curl', depth: 1 });
+    l.tend = T.filter(e => e.t === 'stem').slice(0, 1);
+  }
+  genEnd(l, rel) {
+    const r = this.rng(l.ws + l.wi * 31 + Math.floor(this.rand() * 1e6)), p = this.wordParams(l.ws), E = [];
+    let k0 = 50; const nid = () => l.id * 100 + (k0++);
+    const w = this.mw(l.ch), n = 1 + Math.floor(r() * 2.5); p.w = w;
+    for (let i = 0; i < n; i++) {
+      const dir = -Math.PI / 2 + 0.6 + (i - (n - 1) / 2) * 0.9 + (r() - 0.5) * 0.4;
+      this.grow(r, E, nid, p, { base: [(r() - 0.2) * w * 0.6, -r() * 0.5], dir, len: 0.4 + r() * 0.45, d0: rel + 40 + i * 90, depth: 1, tip: i === 0 || r() < 0.5 ? 'rose' : 'fan' });
+    }
+    l.endEls = E;
+  }
+
+  strokeRange(B, P, a, b, col, w) {
+    const n = P.length - 1, ia = a * n, ib = b * n;
+    const lerp = t => { const i = Math.min(n - 1, Math.floor(t)), f = t - i; return [P[i][0] + (P[i+1][0] - P[i][0]) * f, P[i][1] + (P[i+1][1] - P[i][1]) * f]; };
+    const pts = [lerp(ia)];
+    for (let i = Math.floor(ia) + 1; i < ib; i++) pts.push(P[i]);
+    pts.push(lerp(ib));
+    if (pts.length >= 2) B.stroke(pts, col, w);
+  }
+  thorn(B, P, u, s, S) {
+    const [p, a] = this.at(P, u), d = a + s * 2.3, L = S * 0.045;
+    B.stroke([p, [p[0] + Math.cos(d) * L, p[1] + Math.sin(d) * L]], this.cc.blue, S * 0.022);
+  }
+  leaf(B, bx, by, a, L, bend) {
+    if (L < 0.5) return;
+    const ca = Math.cos(a), sa = Math.sin(a), px = -sa, py = ca;
+    const ax = u => { const b = Math.sin(Math.PI * u) * bend * 0.15 * L; return [bx + ca * u * L + px * b, by + sa * u * L + py * b]; };
+    const hw = u => L * 0.18 * Math.sin(Math.PI * Math.pow(u, 0.8));
+    const N = 12, s1 = [], s2 = [];
+    for (let i = 0; i <= N; i++) { const u = i / N, c = ax(u), w = hw(u); s1.push([c[0] + px * w, c[1] + py * w]); s2.push([c[0] - px * w, c[1] - py * w]); }
+    const tip = ax(1), base = ax(0);
+    B.fill([base, ...s1.slice(1, N), tip, tip, ...s2.slice(1, N).reverse(), base], this.cc.blue);
+    if (L > 6) { const v = []; for (let i = 0; i <= 8; i++) v.push(ax(0.08 + 0.72 * i / 8)); B.stroke(v, this.cc.vein, Math.max(0.8, L * 0.03)); }
+  }
+  rose(B, cx, cy, R, rot, e, a, tl) {
+    const cr = Math.cos(rot), sr = Math.sin(rot), PC = this.cc.petals;
+    const tm = tl ? Math.hypot(tl[0], tl[1]) : 0, ux = tm ? tl[0] / tm : 0, uy = tm ? tl[1] / tm : 0, sq = -0.28 * tm;
+    const T = (x, y, z = 0) => {
+      let dx = x * cr - y * sr, dy = x * sr + y * cr;
+      if (tm) { const k = (dx * ux + dy * uy) * sq; dx += k * ux + tl[0] * R * z; dy += k * uy + tl[1] * R * z; }
+      return [cx + dx, cy + dy];
+    };
+    // petals, back to front: [cx, cy, rx, ry, angle, depth, edge, tone]
+    // tone: 0 = pale outer rim, 1 = mid, 2 = deep heart
+    const P = [
+      [0, -0.36, 0.56, 0.54, 0, 0, 0, 0],
+      [-0.5, -0.06, 0.6, 0.6, -0.35, 0, 0, 1],
+      [0.52, -0.06, 0.6, 0.6, 0.35, 0, 0, 1],
+      [-0.42, 0.3, 0.62, 0.48, 0.2, 0.12, 1, 2],
+      [0.47, 0.3, 0.62, 0.48, -0.2, 0.12, 1, 2],
+      [0.05, 0.42, 0.56, 0.38, 0, 0.14, 0, 1]
+    ];
+    const ax0 = 0, ay0 = 0.5, lw = Math.max(0.8, R * 0.045), st = 85;
+    P.forEach((q, i) => {
+      const s = this.spr((a - i * st) / 1000, 8, 14); if (s <= 0.001) return;
+      const open = (1 - Math.min(1, s)) * (q[0] < 0 ? 0.5 : -0.5), ang = q[4] + open, ca = Math.cos(ang), sa = Math.sin(ang);
+      const pt = (th) => {
+        const rr = 1 + 0.08 * Math.sin(3 * th + e.ph1 + i) + 0.04 * Math.sin(5 * th + e.ph2);
+        const lx = Math.cos(th) * q[2] * rr, ly = Math.sin(th) * q[3] * rr;
+        const px = q[0] + lx * ca - ly * sa, py = q[1] + lx * sa + ly * ca;
+        return T((ax0 + (px - ax0) * s) * R, (ay0 + (py - ay0) * s) * R, q[5]);
+      };
+      const pts = []; for (let k = 0; k < 26; k++) pts.push(pt(k / 26 * Math.PI * 2));
+      B.fill(pts, PC[q[7]]);
+      if (q[6] && R >= 12 && s > 0.4) {
+        const arc = []; for (let k = 0; k <= 14; k++) arc.push(pt(Math.PI * (1.18 + 0.64 * k / 14)));
+        this.strokeRange(B, arc, 0, Math.min(1, (s - 0.4) / 0.5), this.cc.line, lw * 0.8);
+      }
+    });
+    const fr = this.eo((a - P.length * st - 80) / 520);
+    if (fr > 0 && R > 3) {
+      const sp = [], scl = [];
+      const turns = R < 20 ? Math.min(e.turns, 1.3) : R < 32 ? e.turns * 0.8 : e.turns;
+      for (let i = 0; i <= 70; i++) { const u = i / 70, th = e.ph1 + u * turns * Math.PI * 2, rr = R * (0.08 + 0.57 * u); sp.push(T(Math.cos(th) * rr * 1.05, Math.sin(th) * rr * 0.72 - 0.12 * R, 0.34 - 0.24 * u)); }
+      this.strokeRange(B, sp, 0, fr, this.cc.line, lw);
+      if (R >= 14) {
+        for (let i = 0; i <= 36; i++) { const u = i / 36; scl.push(T((-0.72 + 1.5 * u) * R, 0.36 * R + 0.16 * R * Math.abs(Math.sin(u * Math.PI * 3)), 0.18)); }
+        this.strokeRange(B, scl, 0, fr, this.cc.line, lw);
+      }
+    }
+  }
+
+  // ---------- render ----------
+  frame() {
+    const now = performance.now(), dt = Math.min(64, now - (this.lt || now)); this.lt = now;
+    const k = 1 - Math.exp(-dt / 80);
+    this.Sd += (this.St - this.Sd) * k;
+    this.cx += (this.ctx_ - this.cx) * k; this.cy += (this.cty - this.cy) * k;
+    for (const l of this.letters) if (!l.dead && l.tx != null) { l.x += (l.tx - l.x) * k; l.y += (l.ty - l.y) * k; }
+    this.letters = this.letters.filter(l => !(l.dead && now - l.dead > 300));
+    this.paint(now, this.state.mode === 'type');
+  }
+  pal() { const p = this.PAL[this.state.palette] || this.PAL[0]; return { bg: p[1], C: { petals: p[2], blue: p[3], line: p[4], text: p[5], vein: p[1] } }; }
+  mainState() { return { letters: this.letters, S: this.Sd, C: this.pal().C, boil: PROPS.boil, recoil: PROPS.recoil, speed: 1, wither: 260, face: true }; }
+  paint(now, caret) {
+    const g = this.g, d = this.dpr;
+    g.setTransform(d, 0, 0, d, 0, 0); g.fillStyle = this.pal().bg; g.fillRect(0, 0, this.W, this.H);
+    const B = this.backend(g), st = this.mainState();
+    this.render(B, now, st);
+    this.drawFlies(B, now, st.C);
+    if (this.gifts.length) {
+      const LIFE = 60000; this.gifts = this.gifts.filter(gf => now - gf.t0 < LIFE);
+      const S = this.Sd || this.H * 0.2;
+      for (const gf of this.gifts) {
+        const age = now - gf.t0, w = 1 - this.eo((age - (LIFE - 2200)) / 2200);
+        g.globalAlpha = Math.max(0, w);
+        this.rose(B, gf.x * this.W, gf.y * this.H + (1 - w) * S * 0.3, S * 0.24 * (0.65 + 0.35 * w), gf.rot + (1 - w) * 0.6, gf.e, age, null);
+      }
+      g.globalAlpha = 1;
+    }
+    if (caret) {
+      const S = this.Sd, on = now - this.lastKey < 500 || Math.floor(now / 530) % 2 === 0, hf = this.eo((now - this.t0) / 600);
+      if (on && hf > 0) { const h = 0.8 * S * hf, w = Math.max(2, S * 0.03); B.rect(this.cx - w / 2, this.cy - h / 2, w, h, st.C.text); }
+    }
+  }
+  render(B, now, st) {
+    const S = st.S, L = st.letters, act = L.filter(l => !l.dead), sp = st.speed || 1;
+    this.cc = st.C; this._now = now; if (st.face) this.perch = [];
+    if (st.face) for (const l of L) {
+      let tx = 0, ty = 0;
+      const A = !l.dead && l.ch !== ' ' ? this.near(l.x, l.y - S * 0.6) : null;
+      if (A) {
+        const dx = A[0] - l.x, dy = A[1] - (l.y - S * 0.6), d = Math.hypot(dx, dy), reach = Math.max(260, S * 3.2);
+        if (d < reach && d > 1) { const w = 1 - d / reach, s = w * w * (3 - 2 * w); tx = dx / d * s; ty = dy / d * s; }
+      }
+      const c = l.lean || (l.lean = [0, 0]);
+      c[0] += (tx - c[0]) * 0.07; c[1] += (ty - c[1]) * 0.07;
+    }
+    const f = st.boil ? Math.floor(now / 120) : 0, amp = st.boil ? Math.max(0.8, S * 0.01) : 0;
+    const kd = l => l.dead ? 1 - this.eo((now - l.dead) / st.wither) : 1;
+    const draw = layer => {
+      for (const l of L) {
+        if (l.ch === ' ' || !l.els) continue;
+        const age = (now - l.birth) * sp, kk = kd(l);
+        const each = e => { if (e.t === 'stem') this.drawStem(B, e, l, age, kk, st, f, amp, layer); else if (e.layer === layer) this.drawEl(B, e, l, age, kk, st, f, amp); };
+        l.els.forEach(each);
+        if (l.endEls) l.endEls.forEach(each);
+        const i = act.indexOf(l), nx = i >= 0 ? act[i + 1] : null;
+        if (l.tend && (l.dead || !nx || nx.ch === ' ')) {
+          let fr = this.eo(((now - l.tb) * sp - 150) / 450);
+          if (l.cut != null) fr *= 1 - this.eo((now - l.cut) * sp / 150) * Math.min(0.85, st.recoil / (0.6 * S));
+          for (const e of l.tend) this.drawStem(B, e, l, age, kk, st, f, amp, layer, fr * kk);
+        }
+      }
+    };
+    draw(0);
+    for (const l of L) if (l.ch !== ' ' && (st.textAll || !l.dead)) B.text(l.ch, l.x, l.y, S, st.C.text);
+    draw(1);
+  }
+  wpt(st, l, x, y) {
+    if (l.birth != null && this._now != null) {
+      const t = (this._now - l.birth) * (st.speed || 1) / 1000;
+      if (t > 0 && t < 2.5) {
+        const hh = Math.max(0, (l.y - y) / st.S), dmp = Math.exp(-t * 3.2), dir = (l.id % 2 ? 1 : -1);
+        x += st.S * 0.07 * hh * dmp * Math.sin(t * 11) * dir;
+        y += st.S * 0.035 * hh * dmp * Math.sin(t * 11 + 1.2);
+      }
+    }
+    if (st.face && l.lean) {
+      const hh = Math.min(2.5, Math.max(0, (l.y - y) / st.S)), f = hh * hh * 0.5 + hh * 0.5;
+      x += l.lean[0] * st.S * 0.1 * f;
+      y += l.lean[1] * st.S * 0.05 * f;
+    }
+    return st.warp ? st.warp(x, y, l) : [x, y];
+  }
+  drawStem(B, e, l, age, kk, st, f, amp, layer, frO) {
+    const S = st.S, fr = frO != null ? frO : this.eo((age - e.d0) / e.dur) * kk; if (fr <= 0) return;
+    const j = this.jit(e.id, f, amp);
+    const P = e.pts.map(p => this.wpt(st, l, l.x + p[0] * S + j[0], l.y + p[1] * S + j[1]));
+    for (const sg of e.segs) {
+      if (sg.layer !== layer) continue;
+      const b = Math.min(sg.u1, fr); if (b <= sg.u0) continue;
+      this.strokeRange(B, P, sg.u0, b, st.C.blue, S * 0.022 * (e.w || 1));
+    }
+    for (const th of e.thorns) if (fr > th.u && this.layerAt(e.segs, th.u) === layer) this.thorn(B, P, th.u, th.s, S);
+  }
+  drawEl(B, e, l, age, kk, st, f, amp) {
+    const S = st.S, j = this.jit(e.id, f, amp), wx = (x, y) => this.wpt(st, l, l.x + x * S + j[0], l.y + y * S + j[1]);
+    const rw = st.rotw ? st.rotw(e) : 0;
+    if (e.t === 'leaf') {
+      const sc = this.spr((age - e.d0) / 1000, 7, 15) * kk; if (sc <= 0) return;
+      const p = wx(e.x, e.y); this.leaf(B, p[0], p[1], e.a + j[2] + rw, e.L * S * sc, e.bend);
+    } else if (e.t === 'rose') {
+      const a = age - e.d0; if (a < 0) return;
+      if (kk <= 0.001) return;
+      const p = wx(e.x, e.y), tl = st.face ? this.faceTurn(e, p[0], p[1]) : null;
+      if ((st.face || st.perchOn) && !l.dead && a > 700) this.perch.push({ id: e.id, x: p[0], y: p[1], R: e.R * S * kk });
+      this.rose(B, p[0], p[1], e.R * S * kk, e.rot + j[2] + rw + (tl ? tl[0] * 0.22 : 0), e, a, tl);
+    }
+  }
+
+}
+const garden = new Garden();
+window.__garden = garden; // used by the opening screen to place the Explore button under the name
+// Full-page portfolio navigation; the original garden canvas remains the hero's living backdrop.
+const sections = [...document.querySelectorAll('.site-section')];
+const navButtons = [...document.querySelectorAll('.modes button')];
+const setActive = id => {
+  navButtons.forEach(b => { const active = b.dataset.view === id; b.classList.toggle('on', active); if (active) b.setAttribute('aria-current','page'); else b.removeAttribute('aria-current'); });
+  sections.forEach(s => s.classList.toggle('active-section', s.id === id));
+  if (garden.state.view !== id) garden.go(id);
+};
+navButtons.forEach(b => b.addEventListener('click', () => { const target = document.getElementById(b.dataset.view); if (target) { setActive(b.dataset.view); target.scrollIntoView({behavior: RM ? 'auto' : 'smooth'}); } }));
+document.querySelectorAll('[data-jump]').forEach(a => a.addEventListener('click', e => { e.preventDefault(); const id=a.dataset.jump, target=document.getElementById(id); if(target){ setActive(id); target.scrollIntoView({behavior:RM?'auto':'smooth'}); } }));
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => { if (entry.isIntersecting && entry.intersectionRatio > 0.35) setActive(entry.target.id); });
+}, {threshold:[0.35,0.55,0.75]});
+sections.forEach(s => observer.observe(s));
+const progress = document.querySelector('.progress-fill');
+const updateProgress = () => { const max = document.documentElement.scrollHeight - innerHeight; progress.style.width = (max > 0 ? scrollY/max*100 : 0) + '%'; };
+addEventListener('scroll', updateProgress, {passive:true}); updateProgress();
+const menu = document.querySelector('.menu-toggle');
+menu.addEventListener('click', () => { const open = document.body.classList.toggle('menu-open'); menu.setAttribute('aria-expanded', String(open)); });
+navButtons.forEach(b => b.addEventListener('click', () => { document.body.classList.remove('menu-open'); menu.setAttribute('aria-expanded','false'); }));
+const revealObserver = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('revealed'); revealObserver.unobserve(e.target); } }), {threshold:0.12});
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+document.querySelector('.back-top').addEventListener('click', () => { document.getElementById('home').scrollIntoView({behavior:RM?'auto':'smooth'}); });
+
+})();
+</script>
+<script>
+/* Gentle desktop mouse interactions: soft cursor, petal trail and card tilt. */
+(() => {
+  const finePointer = window.matchMedia && window.matchMedia('(hover:hover) and (pointer:fine)').matches;
+  const reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!finePointer || reducedMotion) return;
+
+  const orb = document.createElement('div');
+  const dot = document.createElement('div');
+  orb.className = 'mouse-orb';
+  dot.className = 'mouse-dot';
+  orb.setAttribute('aria-hidden', 'true');
+  dot.setAttribute('aria-hidden', 'true');
+  document.body.append(orb, dot);
+
+  let x = -100, y = -100, px = x, py = y, lastPetal = 0, raf = 0;
+  const move = (event) => {
+    x = event.clientX; y = event.clientY;
+    if (!raf) raf = requestAnimationFrame(render);
+    document.body.classList.add('mouse-ready');
+    const target = event.target.closest('a,button,.project-card,.skill-card,.info-card,.contact-card,.timeline-card');
+    document.body.classList.toggle('mouse-hover', !!target);
+    const now = performance.now();
+    if (now - lastPetal > 72 && Math.hypot(x-px,y-py) > 8) {
+      const petal = document.createElement('i');
+      petal.className = 'mouse-petal';
+      petal.setAttribute('aria-hidden', 'true');
+      petal.style.left = x + 'px'; petal.style.top = y + 'px';
+      petal.style.setProperty('--dx', (Math.random()*24-12).toFixed(1) + 'px');
+      petal.style.setProperty('--dy', (Math.random()*24+8).toFixed(1) + 'px');
+      document.body.appendChild(petal);
+      window.setTimeout(() => petal.remove(), 760);
+      lastPetal = now; px = x; py = y;
+    }
+  };
+  function render() {
+    raf = 0;
+    orb.style.left = x + 'px'; orb.style.top = y + 'px';
+    dot.style.left = x + 'px'; dot.style.top = y + 'px';
+  }
+  window.addEventListener('pointermove', move, {passive:true});
+  window.addEventListener('pointerdown', () => {
+    orb.animate([{transform:'translate(-50%,-50%) scale(1)'},{transform:'translate(-50%,-50%) scale(.78)'},{transform:'translate(-50%,-50%) scale(1)'}],{duration:220});
+  }, {passive:true});
+  document.addEventListener('mouseleave', () => document.body.classList.remove('mouse-ready','mouse-hover'));
+  document.addEventListener('mouseenter', () => document.body.classList.add('mouse-ready'));
+
+  // Small, restrained 3D response on portfolio cards.
+  const cards = document.querySelectorAll('.project-card,.skill-card,.info-card,.contact-card,.timeline-card');
+  cards.forEach(card => {
+    card.addEventListener('pointermove', event => {
+      const r = card.getBoundingClientRect();
+      const rx = ((event.clientY-r.top)/r.height-.5)*-3.2;
+      const ry = ((event.clientX-r.left)/r.width-.5)*3.2;
+      card.style.transform = `perspective(850px) rotateX(${rx}deg) rotateY(${ry}deg) translateY(-2px)`;
+    }, {passive:true});
+    card.addEventListener('pointerleave', () => { card.style.transform = ''; });
+  });
+})();
+</script>
+
+
+<script>
+/* Opening screen: the floral name is shown alone with an "Explore My Portfolio" button just beneath it.
+   Clicking the button reveals the full portfolio. */
+(() => {
+  const screen = document.getElementById('introScreen');
+  const button = document.getElementById('introExplore');
+  if (!screen || !button) return;
+  document.body.classList.add('intro-lock');
+
+  // Keep the button just below the name that the garden canvas is drawing.
+  let raf = 0;
+  const place = () => {
+    const g = window.__garden;
+    if (g && g.W && g.letters) {
+      const live = g.letters.filter(l => !l.dead && l.ty != null);
+      if (live.length) {
+        const baseline = Math.max(...live.map(l => l.ty));          // baseline of the last line of text
+        const S = g.St || g.Sd || 80;                                // current font size of the name
+        const bh = button.offsetHeight || 52;
+        let top = baseline + S * 0.52 + 26;                          // clear the descenders / vines
+        top = Math.min(top, g.H - bh - 90);                          // never fall off small screens
+        button.style.setProperty('--intro-btn-top', Math.round(top) + 'px');
+      }
+    }
+    raf = requestAnimationFrame(place);
+  };
+  place();
+
+  let entered = false;
+  const enter = () => {
+    if (entered) return;
+    entered = true;
+    cancelAnimationFrame(raf);
+    screen.classList.add('is-leaving');
+    document.body.classList.remove('intro-lock');
+    window.scrollTo({ top: 0, behavior: 'auto' });
+    setTimeout(() => screen.remove(), 900);
+  };
+  button.addEventListener('click', enter);
+  button.addEventListener('keydown', e => { if (e.key === ' ') { e.stopPropagation(); } });
+})();
+</script>
+</body></html>
